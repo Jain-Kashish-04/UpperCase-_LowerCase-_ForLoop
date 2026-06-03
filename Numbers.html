@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>
+			Print Numbers 
+		</title>
+	</head>
+	
+	<body>
+		<p>  Printing Numbers From 1 to 100 and print skip of very 5 multiple </p>
+		<button type="button" onclick="Numbers()" > Click me </button>
+		
+		<script>
+			function Numbers(){
+				
+				for (let i = 0 ; i <= 100; i++){
+				
+					if(i % 5 == 0){
+						console.log("Skip");
+					}else{
+						console.log(i);
+					}
+					
+				}
+			}
+			
+		
+		</script>
+	</body>
+</html>
