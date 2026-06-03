@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>
+			String Methods toLowerCase() and toUpperCase() 
+		</title>
+	</head>
+	
+	<body>
+		<p> String Methods toLowerCase() and toUpperCase() with For Loop </p>
+		<input type="text"  id="name" >
+		<button type="button" onclick="Character()" > Click </button>
+		
+		<script>
+		
+			function Character() {
+			
+				let	str = document.getElementById('name').value;
+				let result = "";
+				
+					for (let i = 0; i < str.length ; i++)  {
+					
+						if(str[i] == str[i].toUpperCase()){
+						
+						    result += str[i].toLowerCase();
+						}else{
+							result += str[i].toUpperCase();
+						}
+						
+					}
+						console.log(result);
+				
+			}
+			
+		</script>
+	</body>
+</html>
